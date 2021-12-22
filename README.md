@@ -14,6 +14,7 @@ Solved coding problems from different learning platforms to one place in Java
 
 ## LeetCode problems
 | No | Problem | Solution |
+| --- | ------ | -------- | 
 | 91 | [Decode Ways](https://leetcode.com/problems/decode-ways/) | [Solution](com.coding.patterns.backtracking.Decodeways)
 
 
