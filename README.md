@@ -15,6 +15,8 @@ Solved coding problems from different learning platforms to one place in Java
 ## LeetCode problems
 | No | Problem | Solution |
 | --- | ------ | -------- | 
+| 1 | [Two Sum](https://leetcode.com/problems/two-sum/) | [Solution](https://github.com/ndesai15/coding-java/blob/master/src/com/coding/patterns/basicprogramming/TwoSum.java)
+| 15| [3Sum](https://leetcode.com/problems/3sum/) | [Solution](https://github.com/ndesai15/coding-java/blob/master/src/com/coding/patterns/twoPointers/TripletSumToZero.java)
 | 91 | [Decode Ways](https://leetcode.com/problems/decode-ways/) | [Solution](https://github.com/ndesai15/coding-java/blob/master/src/com/coding/patterns/backtracking/DecodeWays.java)
 
 
