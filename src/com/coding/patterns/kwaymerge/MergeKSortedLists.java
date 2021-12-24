@@ -1,6 +1,6 @@
 package com.coding.patterns.kwaymerge;
 
-import com.coding.patterns.linkedlistInplace.ListNode;
+import com.coding.patterns.inplace.linkedlistInplace.ListNode;
 
 import java.util.PriorityQueue;
 

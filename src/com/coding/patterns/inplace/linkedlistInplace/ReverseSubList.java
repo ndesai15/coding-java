@@ -1,6 +1,4 @@
-package com.coding.patterns.linkedlistInplace;
-
-import java.util.LinkedList;
+package com.coding.patterns.inplace.linkedlistInplace;
 
 public class ReverseSubList {
     public static ListNode reverseSubList(ListNode head, int p, int q) {

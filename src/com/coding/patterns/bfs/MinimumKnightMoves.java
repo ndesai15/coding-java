@@ -32,6 +32,7 @@ public class MinimumKnightMoves {
         int absX = Math.abs(x);
         int absY = Math.abs(y);
 
+        // Note: We can store Position to Set but in that case we will require to override equals method
         Set<String> visited = new HashSet<>();
         Queue<Position> queue = new LinkedList<>();
         Position source = new Position(0, 0) ;

@@ -1,4 +1,4 @@
-package com.coding.patterns.linkedlistInplace;
+package com.coding.patterns.inplace.linkedlistInplace;
 
 public class ListNode {
     public int value = 0;

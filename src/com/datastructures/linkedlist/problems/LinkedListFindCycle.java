@@ -1,6 +1,6 @@
 package com.datastructures.linkedlist.problems;
 
-import com.coding.patterns.linkedlistInplace.ListNode;
+import com.coding.patterns.inplace.linkedlistInplace.ListNode;
 
 /**
  * LeetCode problem: https://leetcode.com/problems/linked-list-cycle/

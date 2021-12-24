@@ -1,6 +1,6 @@
 package com.coding.patterns.datastructures.linkedlists;
 
-import com.coding.patterns.linkedlistInplace.ListNode;
+import com.coding.patterns.inplace.linkedlistInplace.ListNode;
 
 public class SplitLinkedLists {
     public static ListNode[] splitListToParts(ListNode root, int k) {

@@ -1,4 +1,4 @@
-package com.coding.patterns.linkedlistInplace;
+package com.coding.patterns.inplace.linkedlistInplace;
 
 public class ReverseLLEvenOdd {
     public static ListNode reverseLLEvenOdd(ListNode head) {
