@@ -21,6 +21,7 @@ Solved coding problems from different learning platforms to one place in Java
 | 39 | [Combination Sum](https://leetcode.com/problems/combination-sum/) | [Solution](https://github.com/ndesai15/coding-java/blob/master/src/com/coding/patterns/backtracking/CombinationSum.java)
 | 17 | [Letter Combinations Of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/) | [Solution](https://github.com/ndesai15/coding-java/blob/master/src/com/coding/patterns/backtracking/LetterCombinations.java)
 | 91 | [Decode Ways](https://leetcode.com/problems/decode-ways/) | [Solution](https://github.com/ndesai15/coding-java/blob/master/src/com/coding/patterns/backtracking/DecodeWays.java)
+| 136 | [Single Number](https://leetcode.com/problems/single-number/) | [Solution](https://github.com/ndesai15/coding-java/blob/master/src/com/coding/patterns/bitwiseXOR/SingleNumberXOR.java)
 | 189 | [Rotate Array](https://leetcode.com/problems/rotate-array/) | [Solution](https://github.com/ndesai15/coding-java/blob/master/src/com/coding/patterns/inplace/arrayInPlace/RotateArrays.java)
 | 438 | [Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string/) | [Solution](https://github.com/ndesai15/coding-java/blob/master/src/com/coding/patterns/slidingWindow/StringAnagrams.java)
 | 605 | [Can Place Flowers](https://leetcode.com/problems/can-place-flowers/) | [Solution]()
