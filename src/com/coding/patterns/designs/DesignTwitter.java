@@ -26,6 +26,8 @@ class UserTweetTracker {
         this.index = index;
     }
 }
+
+// Time Complexity: O(k + 10 logk)
 class Twitter {
     // Keep track of Follower -> Followees
     Map<Integer, HashSet<Integer>> followMap;
@@ -61,6 +63,7 @@ class Twitter {
                 maxHeap.add(new UserTweetTracker(current, followeeId, index - 1));
             }
         }
+
 
         while (!maxHeap.isEmpty() && result.size() < 10) {
             UserTweetTracker ustt = maxHeap.poll();
