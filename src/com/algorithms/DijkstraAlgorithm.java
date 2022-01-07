@@ -72,6 +72,7 @@ public class DijkstraAlgorithm {
             int vertex = currentItem.vertex;
             int currentMinDistance = currentItem.distance;
             visited[vertex] = true;
+            if (currentMinDistance > distances[vertex]) continue;
             for(int[] edge: edges[vertex]) {
                 if (visited[edge[0]]) {
                     continue;
