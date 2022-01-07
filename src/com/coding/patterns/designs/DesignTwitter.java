@@ -4,55 +4,60 @@ import java.util.*;
 
 /**
  * LeetCode Problem: https://leetcode.com/problems/design-twitter/
+ * Similar Problem: Merge-K-Sorted Arrays
  */
-class UserTweetCount {
-    public int count;
+class UserTweetTimeStamp {
+    public int time;
     public int tweetId;
 
-    public UserTweetCount(int count, int tweetId) {
-        this.count = count;
+    public UserTweetTimeStamp(int time, int tweetId) {
+        this.time = time;
         this.tweetId = tweetId;
     }
 }
 class UserTweetTracker {
-    public UserTweetCount user;
+    public UserTweetTimeStamp user;
     public int followeeId;
     public int index;
 
-    public UserTweetTracker(UserTweetCount user, int followeeId, int index) {
+    public UserTweetTracker(UserTweetTimeStamp user, int followeeId, int index) {
         this.user = user;
         this.followeeId = followeeId;
         this.index = index;
     }
 }
 class Twitter {
+    // Keep track of Follower -> Followees
     Map<Integer, HashSet<Integer>> followMap;
-    Map<Integer, List<UserTweetCount>> tweetMap;
-    int count;
+    // Keep track of User -> List of tweets
+    Map<Integer, List<UserTweetTimeStamp>> tweetMap;
+    // Will act as a timer for tweets
+    int time;
     public Twitter() {
-        int count = 0;
+        int time = 0;
         followMap = new HashMap<>();
         tweetMap = new HashMap<>();
     }
 
     public void postTweet(int userId, int tweetId) {
         if (!tweetMap.containsKey(userId)) {
-            tweetMap.put(userId, new ArrayList<UserTweetCount>());
+            tweetMap.put(userId, new ArrayList<UserTweetTimeStamp>());
         }
-        tweetMap.get(userId).add(new UserTweetCount(count, tweetId));
-        count++;
+        tweetMap.get(userId).add(new UserTweetTimeStamp(time, tweetId));
+        time++;
     }
 
     public List<Integer> getNewsFeed(int userId) {
         List<Integer> result = new ArrayList<Integer>();
-        PriorityQueue<UserTweetTracker> maxHeap = new PriorityQueue<UserTweetTracker>((a, b) -> b.user.count - a.user.count);
+        PriorityQueue<UserTweetTracker> maxHeap =
+                new PriorityQueue<UserTweetTracker>((a, b) -> b.user.time - a.user.time);
 
         followMap.getOrDefault(userId, new HashSet<Integer>()).add(userId);
         for(Integer followeeId: followMap.get(userId)) {
             if (tweetMap.containsKey(followeeId)) {
                 int index = tweetMap.get(followeeId).size() - 1;
                 if (index < 0) continue;
-                UserTweetCount current = tweetMap.get(followeeId).get(index);
+                UserTweetTimeStamp current = tweetMap.get(followeeId).get(index);
                 maxHeap.add(new UserTweetTracker(current, followeeId, index - 1));
             }
         }
@@ -61,7 +66,7 @@ class Twitter {
             UserTweetTracker ustt = maxHeap.poll();
             result.add(ustt.user.tweetId);
             if (ustt.index >= 0) {
-                UserTweetCount temp = tweetMap.get(ustt.followeeId).get(ustt.index);
+                UserTweetTimeStamp temp = tweetMap.get(ustt.followeeId).get(ustt.index);
                 maxHeap.add(new UserTweetTracker(temp, ustt.followeeId, ustt.index - 1));
             }
         }
