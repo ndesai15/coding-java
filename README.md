@@ -37,5 +37,7 @@ Solved coding problems from different learning platforms to one place in Java
 | 767 | [Reorganize String](https://leetcode.com/problems/reorganize-string/) | [Solution](https://github.com/ndesai15/coding-java/blob/master/src/com/coding/patterns/heap/ReOrganizeString.java)
 | 787 | [Cheapest Flights Within K Stops](https://leetcode.com/problems/cheapest-flights-within-k-stops/) | [Solution](https://github.com/ndesai15/coding-java/blob/master/src/com/algorithms/CheapestFlightsWithinKStops.java)
 | 909 | [Snakes and Ladders](https://leetcode.com/problems/snakes-and-ladders/) | [Solution](https://github.com/ndesai15/coding-java/blob/master/src/com/coding/patterns/bfs/SnakesLadders.java)
+| 1151 | [Minimum Swaps To Group All 1's together](https://leetcode.com/problems/minimum-swaps-to-group-all-1s-together/) | [Solution]()
+| 1189 | [Maximum Number of Balloons](https://leetcode.com/problems/maximum-number-of-balloons/) | [Solution]()
 | 1197 | [Minimum Knight Moves](https://leetcode.com/problems/minimum-knight-moves/) | [Solution](https://github.com/ndesai15/coding-java/blob/master/src/com/coding/patterns/bfs/MinimumKnightMoves.java)
 | 1985 | [Find the Kth Largest Integer in the Array](https://leetcode.com/problems/find-the-kth-largest-integer-in-the-array/) | [Solution](https://github.com/ndesai15/coding-java/blob/master/src/com/coding/patterns/binarysearch/KthLargestNumber.java)

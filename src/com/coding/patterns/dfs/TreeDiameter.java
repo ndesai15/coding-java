@@ -1,25 +1,33 @@
 package com.coding.patterns.dfs;
 
+
+// Time Complexity: O(N)
+// Space Complexity: O(h)
 public class TreeDiameter {
-    private static int maxDiameter = 0;
 
     public static int findDiameter(TreeNode root) {
-        calculateHeight(root);
-        return maxDiameter;
+        int[] result = calculateHeight(root);
+        return result[0];
     }
 
-    private static int calculateHeight(TreeNode root) {
-        if (root == null)
-            return 0;
-        int leftHeight = calculateHeight(root.left);
-        int rightHeight = calculateHeight(root.right);
-        if(leftHeight != 0 && rightHeight != 0) {
-            int diameter = leftHeight + rightHeight + 1;
-            maxDiameter = Math.max(diameter, maxDiameter);
+    private static int[] calculateHeight(TreeNode root) {
+        if (root == null) {
+            return new int[]{0, 0};
         }
-        // height of the current node will be equal to the maximum of the heights of
-        // left or right subtree plus '1' for the current node
-        return Math.max(leftHeight, rightHeight) + 1;
+
+        int[] leftTreeInfo = calculateHeight(root.left);
+        int[] rightTreeInfo = calculateHeight(root.right);
+        int leftHeight = leftTreeInfo[1];
+        int rightHeight = rightTreeInfo[1];
+        int currentHeight = Math.max(leftHeight, rightHeight) + 1;
+
+        int leftDiameter = leftTreeInfo[0];
+        int rightDiameter = rightTreeInfo[0];
+
+        int currentPathSoFar = leftHeight + rightHeight;
+        int maxSoFar = Math.max(leftDiameter, rightDiameter);
+        int currentDiameter = Math.max(maxSoFar, currentPathSoFar);
+        return new int[] {currentDiameter, currentHeight};
     }
     public static void main(String[] args) {
         TreeNode root = new TreeNode(1);

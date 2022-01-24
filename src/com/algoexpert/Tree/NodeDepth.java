@@ -1,7 +1,5 @@
 package com.algoexpert.Tree;
 
-import com.datastructures.trees.BST;
-
 import java.util.Stack;
 
 public class NodeDepth {

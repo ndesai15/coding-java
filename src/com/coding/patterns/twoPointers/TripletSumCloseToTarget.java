@@ -4,30 +4,30 @@ import java.util.Arrays;
 
 public class TripletSumCloseToTarget {
 
+    // Time Complexity O(N* logN + N^2)
     public static int searchTriplet(int[] arr, int sum) {
-        Arrays.sort(arr);
-        int minDifference = Integer.MAX_VALUE;
-        int closetSum = Integer.MAX_VALUE;
-        for(int i = 0; i < arr.length - 2; i++) {
+        if (arr == null || arr.length < 3) throw new IllegalArgumentException();
+        Arrays.sort(arr); // O(N* logN)
+        int smallestDiff = Integer.MAX_VALUE;
+        int right = arr.length - 1;
+        // O(N^2)
+        for (int i = 0; i < arr.length - 2; i++) {
             int left = i + 1;
-            int right = arr.length - 1;
+
             while (left < right) {
-                int tripletSum = arr[i] + arr[left] + arr[right];
-                if (Math.abs(sum - tripletSum) <= minDifference && tripletSum < closetSum) {
-                    minDifference = Math.abs(sum - tripletSum);
-                    closetSum = tripletSum;
+                int targetDiff = sum - arr[i] - arr[left] - arr[right];
+                if (targetDiff == 0) return sum;
+
+                if (Math.abs(targetDiff) < Math.abs(smallestDiff) ||
+                        (Math.abs(targetDiff) == Math.abs(smallestDiff) && targetDiff > smallestDiff)) {
+                    smallestDiff = targetDiff;
                 }
 
-                if(tripletSum == sum) return tripletSum;
-                else if (tripletSum < sum) {
-                    left++;
-                }
-                else {
-                    right--;
-                }
+                if (targetDiff > 0) left++;
+                else right--;
             }
         }
-        return closetSum;
+        return sum - smallestDiff;
     }
     public static void main(String[] args) {
         System.out.println(searchTriplet(new int[] { 2,-3,4,-2 }, 1));
