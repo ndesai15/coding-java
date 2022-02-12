@@ -40,6 +40,7 @@ Solved coding problems from different learning platforms to one place in Java
 | 752 | [Open the Lock](https://leetcode.com/problems/open-the-lock/) | [Solution](https://github.com/ndesai15/coding-java/blob/master/src/com/coding/patterns/bfs/OpenLock.java)
 | 767 | [Reorganize String](https://leetcode.com/problems/reorganize-string/) | [Solution](https://github.com/ndesai15/coding-java/blob/master/src/com/coding/patterns/heap/ReOrganizeString.java)
 | 787 | [Cheapest Flights Within K Stops](https://leetcode.com/problems/cheapest-flights-within-k-stops/) | [Solution](https://github.com/ndesai15/coding-java/blob/master/src/com/algorithms/CheapestFlightsWithinKStops.java)
+| 901 | [Online Stock Spanner](https://leetcode.com/problems/online-stock-span/) | [Solution](https://github.com/ndesai15/coding-java/blob/master/src/com/coding/patterns/datastructures/stacks/StockSpanner.java)
 | 909 | [Snakes and Ladders](https://leetcode.com/problems/snakes-and-ladders/) | [Solution](https://github.com/ndesai15/coding-java/blob/master/src/com/coding/patterns/bfs/SnakesLadders.java)
 | 1151 | [Minimum Swaps To Group All 1's together](https://leetcode.com/problems/minimum-swaps-to-group-all-1s-together/) | [Solution]()
 | 1189 | [Maximum Number of Balloons](https://leetcode.com/problems/maximum-number-of-balloons/) | [Solution]()
