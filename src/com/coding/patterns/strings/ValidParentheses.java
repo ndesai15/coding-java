@@ -5,7 +5,7 @@ import java.util.Map;
 import java.util.Stack;
 
 public class ValidParentheses {
-    public boolean isValid(String s) {
+    public static boolean isValid(String s) {
         Stack<Character> stack = new Stack();
         Map<Character, Character> closeToOpen = new HashMap<>();
         closeToOpen.put(')','(');
@@ -25,5 +25,9 @@ public class ValidParentheses {
         }
 
         return  stack.isEmpty() ? true : false;
+    }
+
+    public static void main(String[] args) {
+        System.out.println(isValid("()[]{}{"));
     }
 }
