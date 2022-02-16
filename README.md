@@ -21,6 +21,7 @@ Solved coding problems from different learning platforms to one place in Java
 | 17 | [Letter Combinations Of a Phone Number](https://leetcode.com/problems/letter-combinations-of-a-phone-number/) | [Solution](https://github.com/ndesai15/coding-java/blob/master/src/com/coding/patterns/backtracking/LetterCombinations.java)
 | 34 | [Find First and Last Position of Element in Sorted Array](https://leetcode.com/problems/find-first-and-last-position-of-element-in-sorted-array/) | [Solution](https://github.com/ndesai15/coding-java/tree/master/src/com/coding/patterns/binarysearch/SearchRange.java)
 | 39 | [Combination Sum](https://leetcode.com/problems/combination-sum/) | [Solution](https://github.com/ndesai15/coding-java/blob/master/src/com/coding/patterns/backtracking/CombinationSum.java)
+| 71 | [Simplify Path](https://leetcode.com/problems/simplify-path/) | [Solution]()
 | 74 | [Search a 2D Matrix](https://leetcode.com/problems/search-a-2d-matrix/) |[Solution](https://github.com/ndesai15/coding-java/tree/master/src/com/coding/patterns/binarysearch/SearchIn2DMatrix.java)
 | 91 | [Decode Ways](https://leetcode.com/problems/decode-ways/) | [Solution](https://github.com/ndesai15/coding-java/blob/master/src/com/coding/patterns/backtracking/DecodeWays.java)
 | 121 | [Best Time to Buy and Sell Stock](https://leetcode.com/problems/best-time-to-buy-and-sell-stock/) | [Solution](https://github.com/ndesai15/coding-java/blob/master/src/com/coding/patterns/basicprogramming/BestTimeToBuySellStock.java)
