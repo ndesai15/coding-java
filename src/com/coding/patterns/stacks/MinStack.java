@@ -1,4 +1,4 @@
-package com.coding.patterns.datastructures.stacks;
+package com.coding.patterns.stacks;
 
 import java.util.Stack;
 

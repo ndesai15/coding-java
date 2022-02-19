@@ -1,4 +1,4 @@
-package com.coding.patterns.datastructures.linkedlists;
+package com.coding.patterns.linkedlists;
 
 import com.coding.patterns.inplace.linkedlistInplace.ListNode;
 

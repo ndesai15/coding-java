@@ -1,4 +1,4 @@
-package com.coding.patterns.datastructures.queue;
+package com.coding.patterns.queue;
 
 public class Throttle {
     public void throttleMethod() {

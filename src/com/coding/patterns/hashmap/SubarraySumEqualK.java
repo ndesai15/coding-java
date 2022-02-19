@@ -1,4 +1,4 @@
-package com.coding.patterns.datastructures.hashmap;
+package com.coding.patterns.hashmap;
 
 import java.util.HashMap;
 import java.util.Map;
