@@ -15,6 +15,7 @@ public class GroupAnagrams {
 
         for (String str: strs) {
             char[] charArray = str.toCharArray();
+            Arrays.sort(charArray);
             String key = new String(charArray);
             if (!map.containsKey(key)) {
                 map.put(key, new ArrayList<>());
