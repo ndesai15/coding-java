@@ -2,7 +2,7 @@ package com.coding.patterns.stacks;
 
 import java.util.Stack;
 
-public class MinStack {
+class MinStack {
 
     private Stack<Integer> stack;
     private Stack<Integer> minStack;
@@ -19,8 +19,10 @@ public class MinStack {
     }
 
     public void pop() {
+        if (stack.peek().equals(minStack.peek())) {
+            minStack.pop();
+        }
         stack.pop();
-        minStack.pop();
     }
 
     public int top() {
