@@ -1,5 +1,8 @@
 package com.coding.patterns.binarysearch;
 
+/**
+ * LeetCode Problem: https://leetcode.com/problems/find-minimum-in-rotated-sorted-array/
+ */
 public class MinimumElementInRotatedArray {
     public static int findMinRotated(int[] nums) {
         // Apply binary search
