@@ -53,7 +53,7 @@ public class NQueens {
             Arrays.fill(row, '.');
         }
         List<List<String>> result = new ArrayList<>();
-        backTrack(0, n, board, cols, negDiag, posDiag, result);
+        backTrack(n, 0, board, cols, negDiag, posDiag, result);
 
         return result;
     }
