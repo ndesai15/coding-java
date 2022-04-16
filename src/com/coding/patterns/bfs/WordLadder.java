@@ -19,11 +19,10 @@ public class WordLadder {
                 word -> {
                         for (int i = 0; i < L; i++) {
                             String newWord = word.substring(0, i) + '*' + word.substring(i + 1, L);
-                            List<String> existingTransformedWords = neighbors.getOrDefault(newWord, new ArrayList<>());
+                            List<String> existingTransformedWords = neighbors.computeIfAbsent(newWord, k -> new ArrayList<String>());
                             existingTransformedWords.add(word);
-                            neighbors.put(newWord, existingTransformedWords);
                         }
-        }
+            }
         );
 
         // BFS
@@ -39,7 +38,7 @@ public class WordLadder {
                     return bfsCount;
                 }
                 for (int j = 0; j < word.length(); j++) {
-                    String newWord = word.substring(0, i) + '*' + word.substring(i + 1, L);
+                    String newWord = word.substring(0, j) + '*' + word.substring(j + 1, L);
                     for (String adjWord: neighbors.getOrDefault(newWord, new ArrayList<>())) {
                         if (!visited.contains(adjWord)) {
                             visited.add(adjWord);
