@@ -1,66 +1,55 @@
-package com.coding.patterns.bfs;
-
-import javax.management.MBeanRegistrationException;
-import java.util.*;
-
-public class WordLadder {
-    public static int ladderLength(String beginWord, String endWord, List<String> wordList) {
-        if (!wordList.contains(endWord)) {
+class Solution {
+    public int ladderLength(String beginWord, String endWord, List<String> wordList) {
+        
+        if(!wordList.contains(endWord)) {
             return 0;
         }
-
-        Map<String, List<String>> neighbors = new HashMap<>();
+        var adjList = new HashMap<String, List<String>>();
+        
         wordList.add(beginWord);
-
-        // since all words have same length
-        int L = beginWord.length();
-
-        wordList.forEach(
-                word -> {
-                        for (int i = 0; i < L; i++) {
-                            String newWord = word.substring(0, i) + '*' + word.substring(i + 1, L);
-                            List<String> existingTransformedWords = neighbors.getOrDefault(newWord, new ArrayList<>());
-                            existingTransformedWords.add(word);
-                            neighbors.put(newWord, existingTransformedWords);
-                        }
-        }
-        );
-
-        // BFS
+        
+        //Word Lenght
+        int l = beginWord.length();
+        
+        wordList.forEach(word -> {
+            for(int i=0; i<l; i++) {
+                adjList.computeIfAbsent(findPatten(word, i, l), k -> new ArrayList<>()).add(word);
+            }
+        });
+        
+        var visited = new HashSet<String>();
         Queue<String> queue = new LinkedList<>();
-        Set<String> visited = new HashSet<>();
+        
+        queue.offer(beginWord);
         visited.add(beginWord);
-        int bfsCount = 1;
-        queue.add(beginWord);
-        while (!queue.isEmpty()) {
-            for (int i = 0; i < queue.size(); i++) {
-                String word = queue.remove();
-                if (word.equals(endWord)) {
-                    return bfsCount;
+        
+        var level = 1;
+        while(!queue.isEmpty()) {
+            var qSize = queue.size();
+            for(int i=0; i<qSize; i++) {
+                var wordFromQ = queue.poll();
+                
+                if(wordFromQ.equals(endWord)) {
+                    return level;
                 }
-                for (int j = 0; j < word.length(); j++) {
-                    String newWord = word.substring(0, i) + '*' + word.substring(i + 1, L);
-                    for (String adjWord: neighbors.getOrDefault(newWord, new ArrayList<>())) {
-                        if (!visited.contains(adjWord)) {
-                            visited.add(adjWord);
-                            queue.add(adjWord);
-                        }
+                
+                for(int j=0; j<l; j++) {
+                    var pattern = findPatten(wordFromQ, j, l);
+                
+                    adjList.get(pattern).forEach(adjWrd -> {
+                            if(!visited.contains(adjWrd)) {
+                                queue.offer(adjWrd);
+                                visited.add(adjWrd);
+                            }
+                        });
                     }
                 }
-            }
-            bfsCount += 1;
+            level++;
         }
         return 0;
     }
-
-    public static void main(String[] args) {
-        List<String> words = new ArrayList<>();
-        words.add("hot");
-        words.add("dot");
-        words.add("dog");
-        words.add("lot");
-        words.add("log");
-        words.add("cog");
-        System.out.println(ladderLength("hit","cog", words));
+    
+    private static String findPatten(String originalWord, int index, int maxLength) {
+        return originalWord.substring(0, index) + "*" + originalWord.substring(index+1, maxLength);
     }
 }
