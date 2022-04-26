@@ -13,6 +13,7 @@ Solved coding problems from different learning platforms to one place in Java
 
 ## LeetCode problems
 > **_NOTE:_**  This repository contains many more problems than listed below (find it according to different coding patterns). I just need to find a time to add it to this list. Feel free to contribute to add/update below list to help all.
+
 | No | Problem | Solution |
 | --- | ------ | -------- | 
 | 1 | [Two Sum](https://leetcode.com/problems/two-sum/) | [Solution](https://github.com/ndesai15/coding-java/blob/master/src/com/coding/patterns/basicprogramming/TwoSum.java)
