@@ -35,7 +35,7 @@ Solved coding problems from different learning platforms to one place in Java
 | 438 | [Find All Anagrams in a String](https://leetcode.com/problems/find-all-anagrams-in-a-string/) | [Solution](https://github.com/ndesai15/coding-java/blob/master/src/com/coding/patterns/slidingWindow/StringAnagrams.java)
 | 448 | [Find All Numbers Disappeared in an Array](https://leetcode.com/problems/find-all-numbers-disappeared-in-an-array/) | [Solution](https://github.com/ndesai15/coding-java/blob/master/src/com/coding/patterns/arrays/FindNumbersDisappeared.java)
 | 473 | [Matchsticks to Square](https://leetcode.com/problems/matchsticks-to-square/) | [Solution](https://github.com/ndesai15/coding-java/blob/master/src/com/coding/patterns/backtracking/MatchStick.java)
-| 538 | [Convert BST to Greater BST](https://leetcode.com/problems/convert-bst-to-greater-tree/) | [Solution] ()
+| 538 | [Convert BST to Greater BST](https://leetcode.com/problems/convert-bst-to-greater-tree/) | [Solution](https://github.com/ndesai15/coding-java/blob/master/src/com/coding/patterns/dfs/GreaterBST.java)
 | 605 | [Can Place Flowers](https://leetcode.com/problems/can-place-flowers/) | [Solution](https://github.com/ndesai15/coding-java/blob/master/src/com/coding/patterns/arrays/CanPlaceFlowers.java)
 | 680 | [Valid Palindrome II](https://leetcode.com/problems/valid-palindrome-ii/) | [Solution](https://github.com/ndesai15/coding-java/blob/master/src/com/coding/patterns/basicprogramming/ValidPalindromeII.java)
 | 724 | [Find Pivot Index](https://leetcode.com/problems/find-pivot-index/) | [Solution](https://github.com/ndesai15/coding-java/blob/master/src/com/coding/patterns/arrays/PivotIndexFinder.java)
