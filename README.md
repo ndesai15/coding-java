@@ -51,6 +51,7 @@ Solved coding problems from different learning platforms to one place in Java
 | 1151 | [Minimum Swaps To Group All 1's together](https://leetcode.com/problems/minimum-swaps-to-group-all-1s-together/) | [Solution](https://github.com/ndesai15/coding-java/blob/master/src/com/coding/patterns/slidingWindow/MinSwapsGroupOnes.java)
 | 1189 | [Maximum Number of Balloons](https://leetcode.com/problems/maximum-number-of-balloons/) | [Solution]()
 | 1197 | [Minimum Knight Moves](https://leetcode.com/problems/minimum-knight-moves/) | [Solution](https://github.com/ndesai15/coding-java/blob/master/src/com/coding/patterns/bfs/MinimumKnightMoves.java)
+| 1260 | [Shift 2D Grid](https://leetcode.com/problems/shift-2d-grid/) | [Solution]()
 | 1335 | [Minimum Difficulty of a Job Schedule](https://leetcode.com/problems/minimum-difficulty-of-a-job-schedule/) | [Solution](https://github.com/ndesai15/coding-java/blob/master/src/com/coding/patterns/dfs/MinDiffJobSchedule.java)
 | 1507 | [Reformat Date](https://leetcode.com/problems/reformat-date/) | [Solution](https://github.com/ndesai15/coding-java/tree/master/src/com/coding/patterns/basicprogramming)
 | 1985 | [Find the Kth Largest Integer in the Array](https://leetcode.com/problems/find-the-kth-largest-integer-in-the-array/) | [Solution](https://github.com/ndesai15/coding-java/blob/master/src/com/coding/patterns/binarysearch/KthLargestNumber.java)
