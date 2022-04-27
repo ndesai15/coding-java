@@ -7,7 +7,6 @@ Solved coding problems from different learning platforms to one place in Java
 | [com.algoexpert](https://github.com/ndesai15/coding-java/tree/master/src/com/algoexpert) | AlgoExpert's Coding problems |
 | [com.algorithms](https://github.com/ndesai15/coding-java/tree/master/src/com/algorithms) | Implementation of well-known algorithms |
 | [com.coding.patterns](https://github.com/ndesai15/coding-java/tree/master/src/com/coding/patterns) | Implementation of leetcode problems with proper separation of respected(used) coding pattern |
-| [com.companies.amazon](https://github.com/ndesai15/coding-java/tree/master/src/com/companies) | Most frequently asked technical problems in company |
 | [com.sorting](https://github.com/ndesai15/coding-java/tree/master/src/com/sorting) | Implementation of all sorting algorithms |
 | [com.datastructures](https://github.com/ndesai15/coding-java/tree/master/src/com/datastructures) | Implementation of well-known datastructures |
 

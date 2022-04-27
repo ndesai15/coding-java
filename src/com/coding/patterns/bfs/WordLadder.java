@@ -1,14 +1,17 @@
-class Solution {
-    public int ladderLength(String beginWord, String endWord, List<String> wordList) {
+package com.coding.patterns.bfs;
+import java.util.*;
+
+public class WordLadder {
+    public static int ladderLength(String beginWord, String endWord, List<String> wordList) {
         
         if(!wordList.contains(endWord)) {
             return 0;
         }
-        var adjList = new HashMap<String, List<String>>();
+        Map<String, List<String>> adjList = new HashMap<String, List<String>>();
         
         wordList.add(beginWord);
         
-        //Word Lenght
+        //Word Length
         int l = beginWord.length();
         
         wordList.forEach(word -> {
@@ -17,24 +20,24 @@ class Solution {
             }
         });
         
-        var visited = new HashSet<String>();
+        Set<String> visited = new HashSet<String>();
         Queue<String> queue = new LinkedList<>();
         
         queue.offer(beginWord);
         visited.add(beginWord);
         
-        var level = 1;
+        int level = 1;
         while(!queue.isEmpty()) {
-            var qSize = queue.size();
+            int qSize = queue.size();
             for(int i=0; i<qSize; i++) {
-                var wordFromQ = queue.poll();
+                String wordFromQ = queue.poll();
                 
                 if(wordFromQ.equals(endWord)) {
                     return level;
                 }
                 
                 for(int j=0; j<l; j++) {
-                    var pattern = findPatten(wordFromQ, j, l);
+                    String pattern = findPatten(wordFromQ, j, l);
                 
                     adjList.get(pattern).forEach(adjWrd -> {
                             if(!visited.contains(adjWrd)) {

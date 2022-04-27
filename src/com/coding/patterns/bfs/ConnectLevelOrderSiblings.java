@@ -63,6 +63,32 @@ public class ConnectLevelOrderSiblings {
             }
         }
     }
+
+    /**
+     * LeetCode Problem: https://leetcode.com/problems/populating-next-right-pointers-in-each-node/
+     */
+    // Time Complexity : O(N)
+    // Space Complexity: O(1)
+    // NOTE: Following solution works better only for balanced binary tree
+    public static void connectBetterForBalancedBinaryTree(TreeNodeNext root) {
+       TreeNodeNext current = root;
+       TreeNodeNext next = root == null ? null : root.left;
+
+       while (current != null && next != null) {
+           current.left.next = current.right;
+
+           if (current.next != null) {
+               current.right.next = current.next.left;
+           }
+           current = current.next;
+
+           if (current == null) {
+               current = next;
+               next = current.left;
+           }
+       }
+    }
+
     public static void main(String[] args) {
         TreeNodeNext root = new TreeNodeNext(12);
         root.left = new TreeNodeNext(7);
