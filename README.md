@@ -47,7 +47,7 @@ Solved coding problems from different learning platforms to one place in Java
 | 896 | [Monotonic Array](https://leetcode.com/problems/monotonic-array/) | [Solution](https://github.com/ndesai15/coding-java/blob/master/src/com/coding/patterns/arrays/MonotonicArray.java)
 | 901 | [Online Stock Spanner](https://leetcode.com/problems/online-stock-span/) | [Solution](https://github.com/ndesai15/coding-java/blob/master/src/com/coding/patterns/datastructures/stacks/StockSpanner.java)
 | 909 | [Snakes and Ladders](https://leetcode.com/problems/snakes-and-ladders/) | [Solution](https://github.com/ndesai15/coding-java/blob/master/src/com/coding/patterns/bfs/SnakesLadders.java)
-| 1094 | [Car Pooling](https://leetcode.com/problems/car-pooling/) | [Solution]()
+| 1094 | [Car Pooling](https://leetcode.com/problems/car-pooling/) | [Solution](https://github.com/ndesai15/coding-java/blob/master/src/com/coding/patterns/hashmap/MaxNumberOfBalloons.java)
 | 1151 | [Minimum Swaps To Group All 1's together](https://leetcode.com/problems/minimum-swaps-to-group-all-1s-together/) | [Solution](https://github.com/ndesai15/coding-java/blob/master/src/com/coding/patterns/slidingWindow/MinSwapsGroupOnes.java)
 | 1189 | [Maximum Number of Balloons](https://leetcode.com/problems/maximum-number-of-balloons/) | [Solution]()
 | 1197 | [Minimum Knight Moves](https://leetcode.com/problems/minimum-knight-moves/) | [Solution](https://github.com/ndesai15/coding-java/blob/master/src/com/coding/patterns/bfs/MinimumKnightMoves.java)
