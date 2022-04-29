@@ -4,7 +4,7 @@ import java.util.*;
 
 public class AlienDictionary {
     public static String findOrder(String[] words) {
-        if (words.length == 0 || words == null) {
+        if (words == null || words.length == 0) {
             return "";
         }
 
