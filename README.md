@@ -44,6 +44,7 @@ Solved coding problems from different learning platforms to one place in Java
 | 752 | [Open the Lock](https://leetcode.com/problems/open-the-lock/) | [Solution](https://github.com/ndesai15/coding-java/blob/master/src/com/coding/patterns/bfs/OpenLock.java)
 | 767 | [Reorganize String](https://leetcode.com/problems/reorganize-string/) | [Solution](https://github.com/ndesai15/coding-java/blob/master/src/com/coding/patterns/heap/ReOrganizeString.java)
 | 787 | [Cheapest Flights Within K Stops](https://leetcode.com/problems/cheapest-flights-within-k-stops/) | [Solution](https://github.com/ndesai15/coding-java/blob/master/src/com/algorithms/CheapestFlightsWithinKStops.java)
+| 802 | [Find Eventual Safe States](https://leetcode.com/problems/find-eventual-safe-states/) | [Solution]()
 | 853 | [Car Fleet](https://leetcode.com/problems/car-fleet/) | [Solution]()
 | 896 | [Monotonic Array](https://leetcode.com/problems/monotonic-array/) | [Solution](https://github.com/ndesai15/coding-java/blob/master/src/com/coding/patterns/arrays/MonotonicArray.java)
 | 901 | [Online Stock Spanner](https://leetcode.com/problems/online-stock-span/) | [Solution](https://github.com/ndesai15/coding-java/blob/master/src/com/coding/patterns/datastructures/stacks/StockSpanner.java)
