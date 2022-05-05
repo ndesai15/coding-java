@@ -39,6 +39,7 @@ Solved coding problems from different learning platforms to one place in Java
 | 538 | [Convert BST to Greater BST](https://leetcode.com/problems/convert-bst-to-greater-tree/) | [Solution](https://github.com/ndesai15/coding-java/blob/master/src/com/coding/patterns/dfs/GreaterBST.java)
 | 605 | [Can Place Flowers](https://leetcode.com/problems/can-place-flowers/) | [Solution](https://github.com/ndesai15/coding-java/blob/master/src/com/coding/patterns/arrays/CanPlaceFlowers.java)
 | 680 | [Valid Palindrome II](https://leetcode.com/problems/valid-palindrome-ii/) | [Solution](https://github.com/ndesai15/coding-java/blob/master/src/com/coding/patterns/basicprogramming/ValidPalindromeII.java)
+| 682 | [Baseball Game](https://leetcode.com/problems/baseball-game/) | [Solution]()
 | 724 | [Find Pivot Index](https://leetcode.com/problems/find-pivot-index/) | [Solution](https://github.com/ndesai15/coding-java/blob/master/src/com/coding/patterns/arrays/PivotIndexFinder.java)
 | 739 | [Daily Temperatures](https://leetcode.com/problems/daily-temperatures/) | [Solution](https://github.com/ndesai15/coding-java/blob/master/src/com/coding/patterns/datastructures/stacks/DailyTemperatures.java)
 | 752 | [Open the Lock](https://leetcode.com/problems/open-the-lock/) | [Solution](https://github.com/ndesai15/coding-java/blob/master/src/com/coding/patterns/bfs/OpenLock.java)

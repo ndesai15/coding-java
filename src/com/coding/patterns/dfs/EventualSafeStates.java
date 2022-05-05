@@ -11,7 +11,7 @@ import java.util.List;
 // Time Complexity: O(E +V), E is the # of edges & V is the # of nodes
 
 /*
-  Thought Proccess
+  Thought Process
   - To find a safe node, we need to check if there is any cycle exists or not
   - Find all the paths to safe nodes using DFS
   - Use HashMap to avoid recomputation
