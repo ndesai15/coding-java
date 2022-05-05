@@ -27,7 +27,7 @@ public class SearchInRotatedSortedArray {
                     right = mid - 1;
                 }
                 else {
-                    left = mid - 1;
+                    left = mid + 1;
                 }
             }
         }
