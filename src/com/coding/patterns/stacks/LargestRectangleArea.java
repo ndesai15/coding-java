@@ -14,7 +14,7 @@ public class LargestRectangleArea {
         int maxArea = 0;
         for (int i = 0; i < heights.length; i++) {
             int start = i;
-            while (!stack.isEmpty() && stack.peek()[1] > heights[i]) {
+            while (!stack.isEmpty() && stack.peek()[1] >= heights[i]) {
                 int[] current = stack.pop();
                 int index = current[0];
                 int height = current[1];
@@ -24,7 +24,8 @@ public class LargestRectangleArea {
             stack.push(new int[]{start, heights[i]});
         }
 
-        for (int i = 0 ; i < stack.size(); i++) {
+        int size = stack.size();
+        for (int i = 0 ; i < size; i++) {
             int[] current = stack.pop();
             int index = current[0];
             int height = current[1];
