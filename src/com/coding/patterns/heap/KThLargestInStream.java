@@ -8,10 +8,10 @@ public class KThLargestInStream {
 
     public KThLargestInStream(int k, int[] nums) {
         this.k = k;
+        minHeap = new PriorityQueue<>((a , b) -> a - b);
         for(int num: nums) {
             minHeap.add(num);
         }
-        minHeap = new PriorityQueue<>((a , b) -> a - b);
         while (minHeap.size() > k) {
             minHeap.poll();
         }
