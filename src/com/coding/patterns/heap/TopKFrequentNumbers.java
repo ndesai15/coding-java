@@ -1,45 +1,30 @@
-package com.coding.patterns.heap;
-
 import java.util.*;
 
-public class TopKFrequentNumbers {
-    public static List<Integer> findTopKFrequentNumbers(int[] nums, int k) {
-        if (k == nums.length) {
-            return new ArrayList<>();
-        }
-        // find the frequency of each number
-        Map<Integer, Integer> numFrequencyMap = new HashMap<>();
+public class Main {
+  public static List<Integer> findTopKFrequentNumbers(int[] nums, int k) {
 
-        for (int n: nums) {
-            numFrequencyMap.put(n, numFrequencyMap.getOrDefault(n, 0) + 1);
-        }
-
-        PriorityQueue<Map.Entry<Integer, Integer>> minHeap = new PriorityQueue<>((e1, e2) -> e1.getValue() -
-                e2.getValue());
-
-        // go through all numbers of map & push them in a minHeap which will have top k elements
-        // If at any time it has > K elements, then remove the smallest element.
-
-        for(Map.Entry<Integer, Integer> entry : numFrequencyMap.entrySet()) {
-            minHeap.add(entry);
-            if (minHeap.size() > k) {
-                minHeap.poll();
-            }
-        }
-
-        // Let's create a list of top k elements
+        HashMap<Integer, Integer> map = new HashMap<>();
+        for(int n : nums) 
+            map.put(n, map.getOrDefault(n, 0) + 1);      
+        
+        List<Map.Entry<Integer, Integer>> entries = new ArrayList(map.entrySet());
+        Collections.sort(entries, (a,b) -> b.getValue() - a.getValue());
+        int c = 0;
         List<Integer> topNumbers = new ArrayList<>(k);
-        while (!minHeap.isEmpty()) {
-            topNumbers.add(minHeap.poll().getKey());
-        }
+        for(Map.Entry<Integer, Integer> entry: entries){
+           topNumbers.add(entry.getKey());
+            c++;
+            if(c==k) break;
+    
+        // Let's create a list of top k elements
+        }   
         return topNumbers;
     }
 
     public static void main(String[] args) {
-        //List<Integer> result = TopKFrequentNumbers.findTopKFrequentNumbers(new int[] { 1, 3, 5, 12, 11, 12, 11 }, 2);
-        //System.out.println("Here are the K frequent numbers: " + result);
 
-        List<Integer> result = TopKFrequentNumbers.findTopKFrequentNumbers(new int[] { 5, 12, 11, 3, 11 }, 2);
+        List<Integer> result = findTopKFrequentNumbers(new int[] { 5, 12, 11, 3, 11 }, 2);
         System.out.println("Here are the K frequent numbers: " + result);
+ 
     }
 }
