@@ -56,6 +56,7 @@ Solved coding problems from different learning platforms to one place in Java
 | 1151 | [Minimum Swaps To Group All 1's together](https://leetcode.com/problems/minimum-swaps-to-group-all-1s-together/) | [Solution](https://github.com/ndesai15/coding-java/blob/master/src/com/coding/patterns/slidingWindow/MinSwapsGroupOnes.java)
 | 1189 | [Maximum Number of Balloons](https://leetcode.com/problems/maximum-number-of-balloons/) | [Solution]()
 | 1197 | [Minimum Knight Moves](https://leetcode.com/problems/minimum-knight-moves/) | [Solution](https://github.com/ndesai15/coding-java/blob/master/src/com/coding/patterns/bfs/MinimumKnightMoves.java)
+| 1209 | [Remove All Adjacent Duplicates in String II](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string-ii/) | [Solution]()
 | 1260 | [Shift 2D Grid](https://leetcode.com/problems/shift-2d-grid/) | [Solution](https://github.com/ndesai15/coding-java/blob/master/src/com/coding/patterns/arrays/Shift2DGrid.java)
 | 1335 | [Minimum Difficulty of a Job Schedule](https://leetcode.com/problems/minimum-difficulty-of-a-job-schedule/) | [Solution](https://github.com/ndesai15/coding-java/blob/master/src/com/coding/patterns/dfs/MinDiffJobSchedule.java)
 | 1507 | [Reformat Date](https://leetcode.com/problems/reformat-date/) | [Solution](https://github.com/ndesai15/coding-java/tree/master/src/com/coding/patterns/basicprogramming)

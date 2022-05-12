@@ -24,7 +24,7 @@ public class LargestRectangleArea {
             stack.push(new int[]{start, heights[i]});
         }
 
-        for (int i = 0 ; i < stack.size(); i++) {
+        while (!stack.isEmpty()) {
             int[] current = stack.pop();
             int index = current[0];
             int height = current[1];
