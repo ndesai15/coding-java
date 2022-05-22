@@ -23,7 +23,7 @@ public class LongestSubStringReplacementWithSameLetter {
             char end = string.charAt(windowEnd);
             characterCount.put(end, (characterCount.getOrDefault(end, 0) + 1));
 
-            while ((windowEnd - windowStart + 1) - max(characterCount.values()) > k) {
+            while ((windowEnd - windowStart + 1) - Collections.max(characterCount.values()) > k) {
                 char startChar = string.charAt(windowStart);
                 characterCount.put(startChar, characterCount.get(startChar) - 1);
                 windowStart = windowStart + 1;
