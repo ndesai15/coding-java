@@ -1,7 +1,5 @@
 package com.coding.patterns.arrays;
 
-import java.util.Arrays;
-
 /**
  * LeetCode Problem: https://leetcode.com/problems/product-of-array-except-self/
  */
@@ -12,7 +10,6 @@ public class ProductOfArrayExceptSelf {
     public static int[] productExceptSelf(int[] nums) {
         int n = nums.length;
         int[] result = new int[n];
-        Arrays.fill(result, 1);
 
         // Perform Prefix product operation by traversing Left -> Right
         int prefix = 1;
