@@ -58,5 +58,6 @@ Solved coding problems from different learning platforms to one place in Java
 | 1209 | [Remove All Adjacent Duplicates in String II](https://leetcode.com/problems/remove-all-adjacent-duplicates-in-string-ii/) | [Solution]()
 | 1260 | [Shift 2D Grid](https://leetcode.com/problems/shift-2d-grid/) | [Solution](https://github.com/ndesai15/coding-java/blob/master/src/com/coding/patterns/arrays/Shift2DGrid.java)
 | 1335 | [Minimum Difficulty of a Job Schedule](https://leetcode.com/problems/minimum-difficulty-of-a-job-schedule/) | [Solution](https://github.com/ndesai15/coding-java/blob/master/src/com/coding/patterns/dfs/MinDiffJobSchedule.java)
+| 1461 | [Check If a String Contains All Binary Codes of Size K](https://leetcode.com/problems/check-if-a-string-contains-all-binary-codes-of-size-k/) | [Solution]()
 | 1507 | [Reformat Date](https://leetcode.com/problems/reformat-date/) | [Solution](https://github.com/ndesai15/coding-java/tree/master/src/com/coding/patterns/basicprogramming)
 | 1985 | [Find the Kth Largest Integer in the Array](https://leetcode.com/problems/find-the-kth-largest-integer-in-the-array/) | [Solution](https://github.com/ndesai15/coding-java/blob/master/src/com/coding/patterns/binarysearch/KthLargestNumber.java)
