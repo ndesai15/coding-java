@@ -16,10 +16,10 @@ public class CountGoodNodes {
             goodNode++;
         }
         if (node.left != null) {
-            dfs(node, Math.max(maxSoFar, node.val));
+            dfs(node.left, Math.max(maxSoFar, node.val));
         }
         if (node.right != null) {
-            dfs(node, Math.max(maxSoFar, node.val));
+            dfs(node.right, Math.max(maxSoFar, node.val));
         }
     }
 }
