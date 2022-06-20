@@ -3,33 +3,37 @@ package com.coding.patterns.binarysearch;
 import java.util.Arrays;
 
 public class KokoEatsBanana {
-    public static int minEatingSpeed(int[] piles, int h) {
-        int minSpeed = Integer.MAX_VALUE;
-        int start = 1;
-        int max = Integer.MIN_VALUE;
-        for (int i = 0; i < piles.length - 1; i ++) {
-            if (piles[i] > max) {
-                max = piles[i];
+    public int minEatingSpeed(int[] piles, int h) {
+        int left = 1;
+        int maxValue = Integer.MIN_VALUE;
+        for (int i = 0; i < piles.length; i++) {
+            if (maxValue < piles[i]) {
+                maxValue = piles[i];
             }
         }
-        int end = max;
-        while (start <= end) {
-            int mid = (start + end) / 2;
-            int hours = count(piles, mid);
-
-            if (hours >= h) {
-                minSpeed = Math.min(minSpeed, mid);
-                start = mid + 1;
+        int right = maxValue;
+        int minSpeed = right;
+        
+        // Binary Search
+        while (left <= right) {
+            int k = (left + right) / 2;
+            long hours = count(piles, k);
+            
+            if (hours <= h) {
+                // search in left
+                minSpeed = Math.min(minSpeed, k);
+                right = k - 1;
             }
             else {
-                end = mid - 1;
+                // search in right
+                left = k + 1;
             }
         }
         return minSpeed;
     }
-
-    private static int count(int[] arr, int num) {
-        int res = 0;
+    
+    private static long count(int[] arr, int num) {
+        long res = 0;
         for (int i = 0; i < arr.length; i++) {
             res += (arr[i] / num) + (arr[i] % num == 0 ? 0 : 1);
         }
