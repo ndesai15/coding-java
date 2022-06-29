@@ -1,4 +1,4 @@
-package com.coding.patterns.graphs;
+package com.coding.patterns.dfs;
 
 /**
  * LeetCode Problem: https://leetcode.com/problems/max-area-of-island/
@@ -28,25 +28,25 @@ public class MaxAreaofIsland {
     }
 
     static public int maxAreaOfIsland(int[][] grid) {
-        int max = 0;
+        int rows = grid.length, cols = grid[0].length, res = 0;
 
-        for (int i = 0; i < grid.length; i++)
-            for (int j = 0; j < grid[i].length; j++)
+        for (int i = 0; i < rows; i++)
+            for (int j = 0; j < cols; j++)
                 if (grid[i][j] == 1)
-                    max = Math.max(max, getSize(grid, i, j));
+                    res = Math.max(res, dfs(grid, rows, cols, i, j));
 
-        return max;
+        return res;
     }
 
-    static int getSize(int[][] grid, int i, int j) {
-        if (i < 0 || j < 0 || i == grid.length || j == grid[i].length || grid[i][j] == 0)
+    static int dfs(int[][] grid, int rows, int cols, int i, int j) {
+        if (i < 0 || j < 0 || i == rows || j == cols || grid[i][j] == 0)
             return 0;
 
         // Set the current position as visited
         grid[i][j] = 0;
 
         return 1 +
-                getSize(grid, i + 1, j) + getSize(grid, i - 1, j) +
-                getSize(grid, i, j + 1) + getSize(grid, i, j - 1);
+                dfs(grid, rows, cols, i + 1, j) + dfs(grid, rows, cols, i - 1, j) +
+                dfs(grid, rows, cols, i, j + 1) + dfs(grid, rows, cols, i, j - 1);
     }
 }
